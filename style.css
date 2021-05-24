@@ -26,7 +26,8 @@ body {
     height: 50px;
     width: 100%;
     z-index: 10;
-    background-color: white;
+    overflow: hidden;
+    background-color: #333;
 }
 
 .links {
@@ -52,11 +53,19 @@ body {
     font-size: 25px;
     text-decoration: underline;
 }
+li a:hover:not(.active)
+{
+    background-color: azure;
+}
+.active
+{
+    background-color:aquamarine;
+}
 
 a {
     text-decoration: none;
     color: red;
-    text-shadow: 2px 2px coral;
+    text-shadow: 2px 2px lightgray;
     font-size: 20px;
 
 }
@@ -144,6 +153,10 @@ p {
     color: brown !important;
     font-family: 'Dancing Script', cursive;
     text-shadow: none !important;
+}
+
+.active {
+    background-color: #4CAF50;
 }
 
 .parallax-inner {
